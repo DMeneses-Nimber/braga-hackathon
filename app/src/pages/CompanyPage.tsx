@@ -59,6 +59,10 @@ export function CompanyPage() {
         panelOpen.current = false
         setLive(null)
         setUnavailable(error.message)
+      } else if (error.code === 'PROPOSTAS_PENDENTES') {
+        panelOpen.current = false
+        setLive(null)
+        toast.error('Propostas por aprovar', { description: error.message })
       } else {
         // Steps already shown stay on screen, so it's clear where it stopped.
         setLive((current) => {
@@ -103,6 +107,7 @@ export function CompanyPage() {
 
   const { company, evidence, searches, proposals } = detail.data
   const pendingFields = new Set(proposals.filter((proposal) => proposal.status === 'pendente').map((proposal) => proposal.field))
+  const hasPending = pendingFields.size > 0
   // The evidence only shows the fields with a proposed change.
   const proposedFields = [...new Set(proposals.map((proposal) => proposal.field))]
   const shownEvidence = evidence.filter((item) => proposedFields.includes(item.field))
@@ -122,7 +127,7 @@ export function CompanyPage() {
             variant="primary"
             icon={<Scan className="size-4" aria-hidden />}
             loading={verifying}
-            disabled={agentsOff}
+            disabled={agentsOff || hasPending}
             onClick={() => void verify()}
           >
             {verifying ? 'A verificar…' : 'Verificar empresa'}
@@ -140,6 +145,12 @@ export function CompanyPage() {
         </div>
       </PageHeader>
       {offReason && <Notice title="Os agentes estão desligados">{offReason}</Notice>}
+      {hasPending && (
+        <Notice title="Propostas por aprovar">
+          {company.casualName} tem propostas por aprovar. Os agentes não atuam sobre esta empresa enquanto elas não forem
+          revistas.
+        </Notice>
+      )}
       {live && (
         <LiveVerification
           steps={live.steps}

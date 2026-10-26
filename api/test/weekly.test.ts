@@ -293,6 +293,53 @@ describe('the weekly verification', () => {
     expect((await manual).status).toBe(201)
   })
 
+  it('skips a company that still has proposals to review', async () => {
+    const seen: string[] = []
+    const agents: Agents = {
+      browse: {
+        async collect(company, context) {
+          seen.push(company.nif)
+          context.log(`Recolha de teste para ${company.casualName}.`)
+          return { evidence: [], searches: [] }
+        },
+      },
+      compare: {
+        async compare(_company, _evidence, context) {
+          context.log('Comparação de teste.')
+          return []
+        },
+      },
+    }
+    ctx = await setup({
+      agents,
+      summary: [
+        {
+          id: 'p-001',
+          entity: 'CTT',
+          entityId: CTT,
+          field: 'address',
+          currentValue: 'Avenida D. João II, 13, 1999-001 Lisboa',
+          newValue: 'Rua Nova, 1, 1000-001 Lisboa',
+          source: 'site',
+          extractProof: 'Rua Nova, 1, 1000-001 Lisboa',
+          verifiedAt: '2026-10-26T10:00:00.000Z',
+          reason: 'Teste',
+          status: 'pendente',
+          rejectionReason: '',
+          user: '',
+        },
+      ],
+    })
+    await putEnabled(ctx.app, true)
+    await ctx.weekly.idle()
+    expect(seen).not.toContain(CTT)
+    expect(seen).toHaveLength(2)
+    const status = (await body(await statusOf(ctx.app))) as {
+      last: { verified: number; skipped: number; failures: unknown[] }
+    }
+    expect(status.last).toMatchObject({ verified: 2, skipped: 1, failures: [] })
+  })
+
   it('carries on an unfinished round after a restart', async () => {
     const dataDir = await createDataDir()
     await mkdir(path.join(dataDir, 'runtime'), { recursive: true })

@@ -33,6 +33,14 @@ async function main(nif: string): Promise<void> {
   await db.ensureReady()
   const company = await findCompany(db, nif)
   if (!company) throw new Error(`Não existe nenhuma empresa com o NIF ${nif} em ${db.paths.runtime}.`)
+  const waiting = (await db.readProposals()).some(
+    (proposal) => proposal.entityId === company.nif && proposal.status === 'pendente',
+  )
+  if (waiting) {
+    throw new Error(
+      `${company.casualName} tem propostas por aprovar. Os agentes não atuam sobre esta empresa enquanto elas não forem revistas.`,
+    )
+  }
   console.log(`${company.casualName} (${company.nif})`)
   for (const field of FIELDS) console.log(`  ${field}: ${company[field] ?? ''}`)
   console.log(`Modelos: ${status.models.browse} (recolha), ${status.models.compare} (comparação)`)

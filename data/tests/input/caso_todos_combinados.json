@@ -1,110 +1,20 @@
 {
-  "500697256": {
-    "casualName": "EDP",
-    "nif": "500697256",
-    "name": "EDP, S.A.",
-    "address": "Rua Castilho, 52, 1250-071 Lisboa",
-    "site": "https://www.edpr.com",
-    "cae": "35111",
-    "status": "Inativa"
-  },
-  "505060515": {
-    "casualName": "Galp",
-    "nif": "505060515",
-    "name": "Galp Energia, S.A.",
-    "address": "AVENIDA DA ÍNDIA 8, 1349-065 LISBOA",
-    "site": "galp.com/pt",
-    "cae": "19201",
-    "status": "Em liquidação"
-  },
-  "500100144": {
-    "casualName": "Jerónimo Martins",
-    "nif": "500100144",
-    "name": "Jerónimo Martins, SGPS, S.A.",
-    "address": "R. Actor António Silva, 7, 1649-033 Lisboa",
-    "site": "www.jeronimomartins.com/pt/",
-    "cae": "47111",
+  "503454109": {
+    "casualName": "Ageas Portugal",
+    "nif": "503454109",
+    "name": "Ageas Portugal - Companhia de Seguros, S.A.",
+    "address": "Pç. Príncipe Perfeito, 2, 1990-278 Lisboa",
+    "site": "http://www.ageas.pt",
+    "cae": "65120",
     "status": "Ativa"
   },
-  "502604751": {
-    "casualName": "NOS",
-    "nif": "502604751",
-    "name": "NOS Comunicações, S.A.",
-    "address": "Avenida da Boavista, 1837, 4100-133 Porto",
-    "site": "https://www.nowo.pt",
-    "cae": "61200",
-    "status": "Dissolvida"
-  },
-  "514107405": {
-    "casualName": "Startup Portugal",
-    "nif": "514107405",
-    "name": "Startup Portugal - Associação Portuguesa para a Promoção do Empreendedorismo - SPAPPE",
-    "address": "Rua dos Salazares, 842, 4100-442 Porto",
-    "site": "https://startupportugal.com/pt/",
+  "500032173": {
+    "casualName": "Associação Académica de Coimbra",
+    "nif": "500032173",
+    "name": "Associação Académica de Coimbra",
+    "address": "Rua Padre António Vieira 1 Coimbra 3000-315",
+    "site": "https://academica.pt/",
     "cae": "94995",
-    "status": "Ativa"
-  },
-  "501373357": {
-    "casualName": "IAPMEI",
-    "nif": "501373357",
-    "name": "IAPMEI - Agência para a Competitividade e Inovação, I.P.",
-    "address": "Estrada do Paço do Lumiar, Campus do Lumiar, Edifício A, 1649-038 Lisboa",
-    "site": "https://www.iapmei.pt",
-    "cae": "84130",
-    "status": "Ativa"
-  },
-  "517157721": {
-    "casualName": "Nimber",
-    "nif": "517157721",
-    "name": "NIMBERTECH - IT SOLUTIONS, LDA",
-    "address": "Rua Sá da Bandeira, 706, 4000-432 Porto",
-    "site": "https://nimber.com",
-    "cae": "62020",
-    "status": "Inativa"
-  },
-  "502028351": {
-    "casualName": "Sonae",
-    "nif": "502028351",
-    "name": "Sonae, SGPS, S.A.",
-    "address": "Rua Tomás Ribeiro, 43, 1050-225 Lisboa",
-    "site": "https://www.continente.pt",
-    "cae": "64202",
-    "status": "Ativa"
-  },
-  "500077568": {
-    "casualName": "CTT",
-    "nif": "500077568",
-    "name": "CTT - Correios de Portugal, S.A.",
-    "address": "Rua de São José, 20, 1150-321 Lisboa",
-    "site": "https://www.cttexpresso.pt",
-    "cae": "53200",
-    "status": "Insolvente"
-  },
-  "503264032": {
-    "casualName": "REN",
-    "nif": "503264032",
-    "name": "REN - Redes Energéticas Nacionais, SGPS, S.A.",
-    "address": "Av. dos Estados Unidos da América, 55, 1749-061 Lisboa",
-    "site": "http://ren.pt",
-    "cae": "64202",
-    "status": "Ativa"
-  },
-  "501107694": {
-    "casualName": "Mota-Engil",
-    "nif": "501107694",
-    "name": "Mota-Engil, SGPS, S.A.",
-    "address": "Rua do Rego Lameiro 38, 4300-454 Porto",
-    "site": "https://www.mota-engil.com",
-    "cae": "64202",
-    "status": "Ativa"
-  },
-  "500077797": {
-    "casualName": "Corticeira Amorim",
-    "nif": "500077797",
-    "name": "Corticeira Amorim, SGPS, S.A.",
-    "address": "rua comendador américo ferreira amorim, 380, 4535-186 mozelos",
-    "site": "amorim.com",
-    "cae": "70100",
     "status": "Ativa"
   },
   "501525882": {
@@ -116,6 +26,15 @@
     "cae": "64910",
     "status": "Cessada"
   },
+  "500852367": {
+    "casualName": "Banco Espírito Santo",
+    "nif": "500852367",
+    "name": "Banco Espírito Santo, S.A. - Em Liquidação",
+    "address": "Avenida João Crisóstomo, 30, 1º, 1050-127 Lisboa",
+    "site": "www.bes.pt",
+    "cae": "64920",
+    "status": "Ativa"
+  },
   "500844321": {
     "casualName": "Santander Totta",
     "nif": "500844321",
@@ -124,33 +43,6 @@
     "site": "https://www.santander.pt",
     "cae": "64190",
     "status": "Ativa"
-  },
-  "502544180": {
-    "casualName": "Vodafone Portugal",
-    "nif": "502544180",
-    "name": "Vodafone Portugal - Comunicações Pessoais, S.A.",
-    "address": "avenida d. joão ii, 36, 1998-017 lisboa",
-    "site": "https://www.vodafone.pt",
-    "cae": "61200",
-    "status": "Ativa"
-  },
-  "504615947": {
-    "casualName": "Altice Portugal",
-    "nif": "504615947",
-    "name": "MEO - Serviços de Comunicações e Multimédia, S.A.",
-    "address": "Av. Fontes Pereira de Melo 40, 1069-300 Lisboa",
-    "site": "www.meo.pt",
-    "cae": "61101",
-    "status": "Ativa"
-  },
-  "500278725": {
-    "casualName": "TAP",
-    "nif": "500278725",
-    "name": "TAP - Transportes Aéreos Portugueses, S.A.",
-    "address": "Rua Rodrigues Sampaio, 31, 1150-278 Lisboa",
-    "site": "https://www.portugalia.pt",
-    "cae": "51210",
-    "status": "Suspensa"
   },
   "502790024": {
     "casualName": "Brisa",
@@ -161,41 +53,32 @@
     "cae": "52211",
     "status": "Ativa"
   },
-  "503025798": {
-    "casualName": "The Navigator Company",
-    "nif": "503025798",
-    "name": "The Navigator Company, S.A.",
-    "address": "Av. Fontes Pereira de Melo, n.º 27, 1050-117 Lisboa",
-    "site": "http://thenavigatorcompany.com",
-    "cae": "17120",
+  "500077797": {
+    "casualName": "Corticeira Amorim",
+    "nif": "500077797",
+    "name": "Corticeira Amorim, SGPS, S.A.",
+    "address": "rua comendador américo ferreira amorim, 380, 4535-186 mozelos",
+    "site": "amorim.com",
+    "cae": "70100",
     "status": "Ativa"
   },
-  "513180966": {
-    "casualName": "Efacec",
-    "nif": "513180966",
-    "name": "Efacec Power Solutions, S.A.",
-    "address": "Arroteia, Leça do Balio, 4465-587 Matosinhos",
-    "site": "https://www.efacec.pt",
-    "cae": "64202",
-    "status": "Dissolvida"
-  },
-  "500918880": {
-    "casualName": "Fidelidade",
-    "nif": "500918880",
-    "name": "Fidelidade - Companhia de Seguros, S.A.",
-    "address": "Avenida da República, 90, 1600-206 Lisboa",
-    "site": "https://www.multicare.pt",
-    "cae": "65110",
-    "status": "Em liquidação"
-  },
-  "503454109": {
-    "casualName": "Ageas Portugal",
-    "nif": "503454109",
-    "name": "Ageas Portugal - Companhia de Seguros, S.A.",
-    "address": "Pç. Príncipe Perfeito, 2, 1990-278 Lisboa",
-    "site": "http://www.ageas.pt",
-    "cae": "65120",
+  "504208187": {
+    "casualName": "Critical Software",
+    "nif": "504208187",
+    "name": "Critical Software, S.A.",
+    "address": "Parque Industrial de Taveiro, 3045-504 Coimbra",
+    "site": "https://www.criticalsoftware.com",
+    "cae": "62010",
     "status": "Ativa"
+  },
+  "500077568": {
+    "casualName": "CTT",
+    "nif": "500077568",
+    "name": "CTT - Correios de Portugal, S.A.",
+    "address": "Rua de São José, 20, 1150-321 Lisboa",
+    "site": "https://www.cttexpresso.pt",
+    "cae": "53200",
+    "status": "Insolvente"
   },
   "502884665": {
     "casualName": "CUF",
@@ -206,23 +89,23 @@
     "cae": null,
     "status": "Ativa"
   },
-  "500853975": {
-    "casualName": "Delta Cafés",
-    "nif": "500853975",
-    "name": "Novadelta - Comércio e Indústria de Cafés, S.A.",
-    "address": "Rua Dr. António José de Almeida, 3000-045 Coimbra",
-    "site": "https://www.deltacafes.pt",
-    "cae": "10840",
-    "status": "Insolvente"
+  "500697256": {
+    "casualName": "EDP",
+    "nif": "500697256",
+    "name": "EDP, S.A.",
+    "address": "Rua Castilho, 52, 1250-071 Lisboa",
+    "site": "https://www.edpr.com",
+    "cae": "35111",
+    "status": "Inativa"
   },
-  "501291401": {
-    "casualName": "Super Bock Group",
-    "nif": "501291401",
-    "name": "Super Bock Bebidas, S.A.",
-    "address": "Via Norte, 4465-764 Leça do Balio",
-    "site": "https://www.superbock.pt",
-    "cae": "11050",
-    "status": "Ativa"
+  "513180966": {
+    "casualName": "Efacec",
+    "nif": "513180966",
+    "name": "Efacec Power Solutions, S.A.",
+    "address": "Arroteia, Leça do Balio, 4465-587 Matosinhos",
+    "site": "https://www.efacec.pt",
+    "cae": "64202",
+    "status": "Dissolvida"
   },
   "504825330": {
     "casualName": "Euronext Lisbon",
@@ -242,15 +125,6 @@
     "cae": "63100",
     "status": "Ativa"
   },
-  "504208187": {
-    "casualName": "Critical Software",
-    "nif": "504208187",
-    "name": "Critical Software, S.A.",
-    "address": "Parque Industrial de Taveiro, 3045-504 Coimbra",
-    "site": "https://www.criticalsoftware.com",
-    "cae": "62010",
-    "status": "Ativa"
-  },
   "508771862": {
     "casualName": "Feedzai",
     "nif": "508771862",
@@ -260,22 +134,148 @@
     "cae": null,
     "status": "Ativa"
   },
-  "500032173": {
-    "casualName": "Associação Académica de Coimbra",
-    "nif": "500032173",
-    "name": "Associação Académica de Coimbra",
-    "address": "Rua Padre António Vieira 1 Coimbra 3000-315",
-    "site": "https://academica.pt/",
+  "500918880": {
+    "casualName": "Fidelidade",
+    "nif": "500918880",
+    "name": "Fidelidade - Companhia de Seguros, S.A.",
+    "address": "Avenida da República, 90, 1600-206 Lisboa",
+    "site": "https://www.multicare.pt",
+    "cae": "65110",
+    "status": "Em liquidação"
+  },
+  "505060515": {
+    "casualName": "Galp",
+    "nif": "505060515",
+    "name": "Galp Energia, S.A.",
+    "address": "AVENIDA DA ÍNDIA 8, 1349-065 LISBOA",
+    "site": "galp.com/pt",
+    "cae": "19201",
+    "status": "Em liquidação"
+  },
+  "501373357": {
+    "casualName": "IAPMEI",
+    "nif": "501373357",
+    "name": "IAPMEI - Agência para a Competitividade e Inovação, I.P.",
+    "address": "Estrada do Paço do Lumiar, Campus do Lumiar, Edifício A, 1649-038 Lisboa",
+    "site": "https://www.iapmei.pt",
+    "cae": "84130",
+    "status": "Ativa"
+  },
+  "500100144": {
+    "casualName": "Jerónimo Martins",
+    "nif": "500100144",
+    "name": "Jerónimo Martins, SGPS, S.A.",
+    "address": "R. Actor António Silva, 7, 1649-033 Lisboa",
+    "site": "www.jeronimomartins.com/pt/",
+    "cae": "47111",
+    "status": "Ativa"
+  },
+  "504615947": {
+    "casualName": "Altice Portugal",
+    "nif": "504615947",
+    "name": "MEO - Serviços de Comunicações e Multimédia, S.A.",
+    "address": "Av. Fontes Pereira de Melo 40, 1069-300 Lisboa",
+    "site": "www.meo.pt",
+    "cae": "61101",
+    "status": "Ativa"
+  },
+  "501107694": {
+    "casualName": "Mota-Engil",
+    "nif": "501107694",
+    "name": "Mota-Engil, SGPS, S.A.",
+    "address": "Rua do Rego Lameiro 38, 4300-454 Porto",
+    "site": "https://www.mota-engil.com",
+    "cae": "64202",
+    "status": "Ativa"
+  },
+  "517157721": {
+    "casualName": "Nimber",
+    "nif": "517157721",
+    "name": "NIMBERTECH - IT SOLUTIONS, LDA",
+    "address": "Rua Sá da Bandeira, 706, 4000-432 Porto",
+    "site": "https://nimber.com",
+    "cae": "62020",
+    "status": "Inativa"
+  },
+  "502604751": {
+    "casualName": "NOS",
+    "nif": "502604751",
+    "name": "NOS Comunicações, S.A.",
+    "address": "Avenida da Boavista, 1837, 4100-133 Porto",
+    "site": "https://www.nowo.pt",
+    "cae": "61200",
+    "status": "Dissolvida"
+  },
+  "500853975": {
+    "casualName": "Delta Cafés",
+    "nif": "500853975",
+    "name": "Novadelta - Comércio e Indústria de Cafés, S.A.",
+    "address": "Rua Dr. António José de Almeida, 3000-045 Coimbra",
+    "site": "https://www.deltacafes.pt",
+    "cae": "10840",
+    "status": "Insolvente"
+  },
+  "503264032": {
+    "casualName": "REN",
+    "nif": "503264032",
+    "name": "REN - Redes Energéticas Nacionais, SGPS, S.A.",
+    "address": "Av. dos Estados Unidos da América, 55, 1749-061 Lisboa",
+    "site": "http://ren.pt",
+    "cae": "64202",
+    "status": "Ativa"
+  },
+  "502028351": {
+    "casualName": "Sonae",
+    "nif": "502028351",
+    "name": "Sonae, SGPS, S.A.",
+    "address": "Rua Tomás Ribeiro, 43, 1050-225 Lisboa",
+    "site": "https://www.continente.pt",
+    "cae": "64202",
+    "status": "Ativa"
+  },
+  "514107405": {
+    "casualName": "Startup Portugal",
+    "nif": "514107405",
+    "name": "Startup Portugal - Associação Portuguesa para a Promoção do Empreendedorismo - SPAPPE",
+    "address": "Rua dos Salazares, 842, 4100-442 Porto",
+    "site": "https://startupportugal.com/pt/",
     "cae": "94995",
     "status": "Ativa"
   },
-  "500852367": {
-    "casualName": "Banco Espírito Santo",
-    "nif": "500852367",
-    "name": "Banco Espírito Santo, S.A. - Em Liquidação",
-    "address": "Avenida João Crisóstomo, 30, 1º, 1050-127 Lisboa",
-    "site": "www.bes.pt",
-    "cae": "64920",
+  "501291401": {
+    "casualName": "Super Bock Group",
+    "nif": "501291401",
+    "name": "Super Bock Bebidas, S.A.",
+    "address": "Via Norte, 4465-764 Leça do Balio",
+    "site": "https://www.superbock.pt",
+    "cae": "11050",
+    "status": "Ativa"
+  },
+  "500278725": {
+    "casualName": "TAP",
+    "nif": "500278725",
+    "name": "TAP - Transportes Aéreos Portugueses, S.A.",
+    "address": "Rua Rodrigues Sampaio, 31, 1150-278 Lisboa",
+    "site": "https://www.portugalia.pt",
+    "cae": "51210",
+    "status": "Suspensa"
+  },
+  "503025798": {
+    "casualName": "The Navigator Company",
+    "nif": "503025798",
+    "name": "The Navigator Company, S.A.",
+    "address": "Av. Fontes Pereira de Melo, n.º 27, 1050-117 Lisboa",
+    "site": "http://thenavigatorcompany.com",
+    "cae": "17120",
+    "status": "Ativa"
+  },
+  "502544180": {
+    "casualName": "Vodafone Portugal",
+    "nif": "502544180",
+    "name": "Vodafone Portugal - Comunicações Pessoais, S.A.",
+    "address": "avenida d. joão ii, 36, 1998-017 lisboa",
+    "site": "https://www.vodafone.pt",
+    "cae": "61200",
     "status": "Ativa"
   }
 }

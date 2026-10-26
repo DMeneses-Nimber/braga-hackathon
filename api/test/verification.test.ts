@@ -23,6 +23,16 @@ import {
 
 const NEW_ADDRESS = 'Rua Nova, 1, 1000-001 Lisboa'
 
+/** Reviews every pending proposal, so a later verification is allowed to run. */
+async function reviewPending(ctx: TestContext): Promise<void> {
+  const proposals = (await readSummary(ctx.dataDir)) as { id: string; status: string }[]
+  for (const proposal of proposals) {
+    if (proposal.status !== 'pendente') continue
+    const response = await postJson(ctx.app, `/api/propostas/${proposal.id}/rejeitar`, { reason: 'Revista para o teste.' })
+    expect(response.status).toBe(200)
+  }
+}
+
 const script = {
   evidence: [evidence('address', NEW_ADDRESS), evidence('status', 'Inativa', 'googleMaps')],
   decisions: [
@@ -151,6 +161,7 @@ describe('verification with agents', () => {
       }),
     })
     await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)
+    await reviewPending(ctx)
     await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)
     const stored = (await readRuntime(ctx.dataDir, 'evidence.json')) as { value: string }[]
     expect(stored).toHaveLength(1)
@@ -180,21 +191,41 @@ describe('verification with agents', () => {
     expect(await readRuntime(ctx.dataDir, 'searches.json')).toEqual(first.searches)
     const detail = (await body(await ctx.app.request(`/api/empresas/${CTT}`))) as { searches: Json }
     expect(detail.searches).toEqual(first.searches)
+    await reviewPending(ctx)
     await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)
     expect(await readRuntime(ctx.dataDir, 'searches.json')).toEqual([])
   })
 
-  it("doesn't duplicate an identical pending proposal", async () => {
-    const agents = fakeAgents({ decisions: [decision('address', 'propor', NEW_ADDRESS)] })
-    ctx = await setup({ agents })
-    await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)
-    const second = (await body(await postJson(ctx.app, `/api/empresas/${CTT}/verificar`))) as {
-      proposals: unknown[]
-      decisions: { proposalId: string | null }[]
+  it('does not run the agents while the company has proposals to review', async () => {
+    let calls = 0
+    const agents: Agents = {
+      browse: {
+        async collect(company, context) {
+          calls += 1
+          context.log(`Recolha de teste para ${company.casualName}.`)
+          return { evidence: [evidence('address', NEW_ADDRESS)], searches: [] }
+        },
+      },
+      compare: {
+        async compare() {
+          return [decision('address', 'propor', NEW_ADDRESS)]
+        },
+      },
     }
-    expect(second.proposals).toEqual([])
-    expect(second.decisions[0]?.proposalId).toBe('p-001')
+    ctx = await setup({ agents })
+    expect((await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)).status).toBe(201)
+    const second = await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)
+    const payload = (await body(second)) as { error: { code: string; message: string } }
+    expect(second.status).toBe(409)
+    expect(payload.error.code).toBe('PROPOSTAS_PENDENTES')
+    expect(payload.error.message).toContain('propostas por aprovar')
+    const stream = await postJson(ctx.app, `/api/empresas/${CTT}/verificar/stream`)
+    expect(stream.status).toBe(409)
+    expect(calls).toBe(1)
     expect(await readSummary(ctx.dataDir)).toHaveLength(1)
+    expect((await postJson(ctx.app, '/api/propostas/p-001/aprovar')).status).toBe(200)
+    expect((await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)).status).toBe(201)
+    expect(calls).toBe(2)
   })
 
   it('answers 500 with the steps when an agent throws, and writes nothing', async () => {
@@ -313,6 +344,7 @@ describe('a change the user rejected', () => {
     const fourth = (await body(await verify())) as { proposals: { id: string; newValue: string }[] }
     expect(fourth.proposals).toEqual([expect.objectContaining({ id: 'p-002', newValue: addresses[3] })])
     now.advance(REJECTED_QUIET_MS)
+    await reviewPending(ctx)
     const fifth = (await body(await verify())) as { proposals: { id: string; newValue: string }[] }
     expect(fifth.proposals).toEqual([expect.objectContaining({ id: 'p-003', newValue: addresses[0] })])
   })

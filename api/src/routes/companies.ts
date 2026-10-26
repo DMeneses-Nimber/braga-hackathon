@@ -53,7 +53,7 @@ const verifyRoute = createRoute({
     201: jsonContent(VerificationResultSchema, 'Verificação concluída'),
     400: errorResponse('NIF inválido'),
     404: errorResponse('Empresa não encontrada'),
-    409: errorResponse('Já está a decorrer uma verificação desta empresa'),
+    409: errorResponse('Já está a decorrer uma verificação, ou a empresa tem propostas por aprovar'),
     500: errorResponse('Um agente falhou ou devolveu dados inválidos'),
     501: errorResponse('Os agentes ainda não estão ligados'),
   },

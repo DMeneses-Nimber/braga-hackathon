@@ -192,14 +192,28 @@ describe('a stale proposal', () => {
   })
 
   it('answers 409 when the company changed since the proposal was made', async () => {
-    ctx = await setup({
-      agents: fakeAgents(
-        { decisions: [decision('address', 'propor', 'Rua A, 1, 1000-001 Lisboa')] },
-        { decisions: [decision('address', 'propor', 'Rua B, 2, 1000-002 Lisboa')] },
-      ),
+    const original = GROUND_TRUTH[CTT].address
+    const proposal = (id: string, newValue: string, currentValue: string) => ({
+      id,
+      entity: 'CTT',
+      entityId: CTT,
+      field: 'address' as const,
+      currentValue,
+      newValue,
+      source: 'site',
+      extractProof: newValue,
+      verifiedAt: '2026-10-26T10:00:00.000Z',
+      reason: 'Teste',
+      status: 'pendente' as const,
+      rejectionReason: '',
+      user: '',
     })
-    expect((await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)).status).toBe(201)
-    expect((await postJson(ctx.app, `/api/empresas/${CTT}/verificar`)).status).toBe(201)
+    ctx = await setup({
+      summary: [
+        proposal('p-001', 'Rua A, 1, 1000-001 Lisboa', original),
+        proposal('p-002', 'Rua B, 2, 1000-002 Lisboa', original),
+      ],
+    })
     const first = await postJson(ctx.app, '/api/propostas/p-001/aprovar')
     const approved = (await body(first)) as { proposal: { user: string } }
     expect(first.status).toBe(200)
@@ -209,7 +223,7 @@ describe('a stale proposal', () => {
     expect(second.status).toBe(409)
     expect(payload.error.code).toBe('PROPOSTA_DESATUALIZADA')
     expect(payload.error.details).toEqual({
-      proposalCurrentValue: GROUND_TRUTH[CTT].address,
+      proposalCurrentValue: original,
       currentValue: 'Rua A, 1, 1000-001 Lisboa',
     })
   })

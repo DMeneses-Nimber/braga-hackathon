@@ -232,7 +232,7 @@ export class WeeklyVerificationService {
       return { kind: 'verified', proposals: result.proposals.length }
     } catch (error) {
       if (error instanceof ApiError && (error.status === 409 || error.status === 404)) {
-        // When the company is already being verified with the button, that verification covers it.
+        // A company already being verified, or one with proposals still to review, is left to that review.
         this.log(`Verificação semanal: ${company.casualName} saltada: ${error.message}`)
         return { kind: 'skipped' }
       }

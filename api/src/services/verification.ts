@@ -82,13 +82,22 @@ export class VerificationService {
     this.timeoutMs = options.timeoutMs ?? DEFAULT_TIMEOUT_MS
   }
 
-  /** The checks before a run: the company exists, the agents are on, and it is not already running. */
+  /** The checks before a run: the company exists, the agents are on, it is not already running, and nothing is waiting for review. */
   async check(nif: string): Promise<{ company: Company; agents: Agents }> {
     const company = await findCompany(this.db, nif)
     if (!company) throw companyNotFound(nif)
     if (!this.agents) throw new ApiError(501, 'AGENTES_INDISPONIVEIS', this.unavailableReason)
     if (this.running.has(nif)) {
       throw new ApiError(409, 'VERIFICACAO_EM_CURSO', `Já está a decorrer uma verificação de ${company.casualName}.`)
+    }
+    const proposals = await this.db.readProposals()
+    const waiting = proposals.some((proposal) => proposal.entityId === company.nif && proposal.status === 'pendente')
+    if (waiting) {
+      throw new ApiError(
+        409,
+        'PROPOSTAS_PENDENTES',
+        `${company.casualName} tem propostas por aprovar. Os agentes não atuam sobre esta empresa enquanto elas não forem revistas.`,
+      )
     }
     return { company, agents: this.agents }
   }
