@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --color-canvas: oklch(0.984 0.003 265);
+  --color-surface: oklch(1 0 0);
+  --color-subtle: oklch(0.966 0.005 265);
+  --color-ink: oklch(0.24 0.02 270);
+  --color-muted: oklch(0.54 0.018 270);
+  --color-line: oklch(0.915 0.006 270);
+  --color-accent: oklch(0.52 0.21 278);
+  --color-accent-ink: oklch(1 0 0);
+  --color-accent-soft: oklch(0.95 0.035 278);
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: oklch(0.165 0.012 270);
+    --color-surface: oklch(0.205 0.014 270);
+    --color-subtle: oklch(0.245 0.014 270);
+    --color-ink: oklch(0.96 0.004 270);
+    --color-muted: oklch(0.72 0.014 270);
+    --color-line: oklch(0.3 0.014 270);
+    --color-accent: oklch(0.7 0.16 278);
+    --color-accent-ink: oklch(0.16 0.02 278);
+    --color-accent-soft: oklch(0.3 0.07 278);
+  }
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-canvas);
+  background-image: radial-gradient(ellipse 70rem 28rem at 50% -12rem, var(--color-accent-soft), transparent 70%);
+  background-repeat: no-repeat;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+}

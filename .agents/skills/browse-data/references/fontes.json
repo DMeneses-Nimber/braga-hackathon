@@ -1,0 +1,65 @@
+{
+  "fields": {
+    "address": ["site", "googleMaps", "teamlyzer", "linkedin", "instagram", "facebook", "x", "wikipedia", "web"],
+    "cae": ["sicae", "contribuinte", "web"],
+    "site": ["linkedin", "instagram", "facebook", "x", "googleMaps", "web"],
+    "status": ["googleMaps", "web"]
+  },
+  "sources": {
+    "site": {
+      "label": "Site da empresa",
+      "how": "abrirPagina no site guardado e nas páginas de contactos",
+      "domains": []
+    },
+    "googleMaps": {
+      "label": "Google Maps",
+      "how": "googleMaps com o nome e a localidade",
+      "domains": ["maps.google.com", "maps.google.pt", "maps.app.goo.gl"]
+    },
+    "teamlyzer": {
+      "label": "Teamlyzer",
+      "how": "pesquisarWeb com o domínio teamlyzer.com e, se preciso, abrirPagina no resultado",
+      "domains": ["teamlyzer.com"]
+    },
+    "linkedin": {
+      "label": "LinkedIn da empresa",
+      "how": "pesquisarWeb com o domínio linkedin.com",
+      "domains": ["linkedin.com"]
+    },
+    "instagram": {
+      "label": "Instagram da empresa",
+      "how": "pesquisarWeb com o domínio instagram.com",
+      "domains": ["instagram.com"]
+    },
+    "facebook": {
+      "label": "Facebook da empresa",
+      "how": "pesquisarWeb com o domínio facebook.com",
+      "domains": ["facebook.com"]
+    },
+    "x": {
+      "label": "X da empresa",
+      "how": "pesquisarWeb com os domínios x.com e twitter.com",
+      "domains": ["x.com", "twitter.com"]
+    },
+    "wikipedia": {
+      "label": "Wikipedia",
+      "how": "wikipedia com o nome da empresa",
+      "domains": ["wikipedia.org"]
+    },
+    "sicae": {
+      "label": "SICAE",
+      "how": "sicae com o NIF",
+      "domains": ["sicae.pt"]
+    },
+    "contribuinte": {
+      "label": "contribuinte.pt",
+      "how": "contribuinte com o NIF",
+      "domains": ["contribuinte.pt"]
+    },
+    "web": {
+      "label": "Outros sites de confiança",
+      "how": "pesquisarWeb sem domínios; só registos oficiais, diretórios empresariais conhecidos ou imprensa",
+      "domains": []
+    }
+  }
+}

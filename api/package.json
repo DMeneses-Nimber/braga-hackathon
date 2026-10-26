@@ -1,0 +1,36 @@
+{
+  "name": "data-integrity-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API do Data Integrity Agent: empresas, verificações e propostas em ficheiros JSON",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:reset": "tsx src/scripts/reset-db.ts",
+    "db:seed": "tsx src/scripts/seed-db.ts",
+    "agentes:testar": "tsx src/scripts/try-agents.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/xai": "5.0.24",
+    "@hono/node-server": "^2.1.5",
+    "@hono/swagger-ui": "^0.6.1",
+    "@hono/zod-openapi": "^1.6.3",
+    "@tavily/core": "^0.7.14",
+    "ai": "^7.0.143",
+    "cheerio": "^1.2.0",
+    "hono": "^4.13.13",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

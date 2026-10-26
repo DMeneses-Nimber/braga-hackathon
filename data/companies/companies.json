@@ -1,0 +1,281 @@
+{
+  "500032173": {
+    "casualName": "Associação Académica de Coimbra",
+    "nif": "500032173",
+    "name": "Associação Académica de Coimbra",
+    "address": "Rua Padre António Vieira 1 Coimbra 3000-315",
+    "site": "https://academica.pt/",
+    "cae": "93192",
+    "status": "Ativa"
+  },
+  "500077568": {
+    "casualName": "CTT",
+    "nif": "500077568",
+    "name": "CTT - Correios de Portugal, S.A.",
+    "address": "Avenida D. João II, 13, 1999-001 Lisboa",
+    "site": "www.ctt.pt",
+    "cae": "53100",
+    "status": "Ativa"
+  },
+  "500077797": {
+    "casualName": "Corticeira Amorim",
+    "nif": "500077797",
+    "name": "Corticeira Amorim, SGPS, S.A.",
+    "address": "Rua Comendador Américo Ferreira Amorim, 380, 4535-186 Mozelos",
+    "site": "amorim.com",
+    "cae": "70100",
+    "status": "Ativa"
+  },
+  "500100144": {
+    "casualName": "Jerónimo Martins",
+    "nif": "500100144",
+    "name": "Jerónimo Martins, SGPS, S.A.",
+    "address": "R. Actor António Silva, 7, 1649-033 Lisboa",
+    "site": "www.jeronimomartins.com/pt/",
+    "cae": "70100",
+    "status": "Ativa"
+  },
+  "500278725": {
+    "casualName": "TAP",
+    "nif": "500278725",
+    "name": "TAP - Transportes Aéreos Portugueses, S.A.",
+    "address": "Rua Rodrigues Sampaio, 31, 1150-278 Lisboa",
+    "site": "https://www.portugalia.pt",
+    "cae": "51100",
+    "status": "Ativa"
+  },
+  "500697256": {
+    "casualName": "EDP",
+    "nif": "500697256",
+    "name": "EDP, S.A.",
+    "address": "Avenida 24 de julho, 12, 1249-300 Lisboa",
+    "site": "edp.com",
+    "cae": "70100",
+    "status": "Ativa"
+  },
+  "500844321": {
+    "casualName": "Santander Totta",
+    "nif": "500844321",
+    "name": "Banco Santander Totta, S.A.",
+    "address": "Rua do Ouro, 88, 1100-063 Lisboa",
+    "site": "https://www.santander.pt",
+    "cae": "64190",
+    "status": "Ativa"
+  },
+  "500852367": {
+    "casualName": "Banco Espírito Santo",
+    "nif": "500852367",
+    "name": "Banco Espírito Santo, S.A. - Em Liquidação",
+    "address": "Avenida João Crisóstomo, 30, 1º, 1050-127 Lisboa",
+    "site": "www.bes.pt",
+    "cae": "66190",
+    "status": "Ativa"
+  },
+  "500853975": {
+    "casualName": "Delta Cafés",
+    "nif": "500853975",
+    "name": "Novadelta - Comércio e Indústria de Cafés, S.A.",
+    "address": "Avenida Calouste Gulbenkian, 7370-025 Campo Maior",
+    "site": "https://www.deltacafes.pt",
+    "cae": "46370",
+    "status": "Ativa"
+  },
+  "500918880": {
+    "casualName": "Fidelidade",
+    "nif": "500918880",
+    "name": "Fidelidade - Companhia de Seguros, S.A.",
+    "address": "Largo Do Calhariz, 30, 1200-086 Lisboa",
+    "site": "fidelidade.pt",
+    "cae": "65120",
+    "status": "Ativa"
+  },
+  "501107694": {
+    "casualName": "Mota-Engil",
+    "nif": "501107694",
+    "name": "Mota-Engil, SGPS, S.A.",
+    "address": "Rua do Rego Lameiro 38, 4300-454 Porto",
+    "site": "https://www.mota-engil.com",
+    "cae": "64202",
+    "status": "Ativa"
+  },
+  "501291401": {
+    "casualName": "Super Bock Group",
+    "nif": "501291401",
+    "name": "Super Bock Bebidas, S.A.",
+    "address": "Via Norte, 4465-764 Leça do Balio",
+    "site": "https://www.superbock.pt",
+    "cae": "11050",
+    "status": "Ativa"
+  },
+  "501373357": {
+    "casualName": "IAPMEI",
+    "nif": "501373357",
+    "name": "IAPMEI - Agência para a Competitividade e Inovação, I.P.",
+    "address": "Estrada do Paço do Lumiar, Campus do Lumiar, Edifício A, 1649-038 Lisboa",
+    "site": "https://www.iapmei.pt",
+    "cae": "84130",
+    "status": "Ativa"
+  },
+  "501525882": {
+    "casualName": "BCP",
+    "nif": "501525882",
+    "name": "Banco Comercial Português, S.A.",
+    "address": "Praça D. João I, 28, 4000-295 Porto",
+    "site": "https://www.millenniumbcp.pt/",
+    "cae": "64190",
+    "status": "Ativa"
+  },
+  "502028351": {
+    "casualName": "Sonae",
+    "nif": "502028351",
+    "name": "Sonae, SGPS, S.A.",
+    "address": "Lugar do Espido, Via Norte, 4470-177 Maia",
+    "site": "sonae.pt",
+    "cae": "70100",
+    "status": "Ativa"
+  },
+  "502544180": {
+    "casualName": "Vodafone Portugal",
+    "nif": "502544180",
+    "name": "Vodafone Portugal - Comunicações Pessoais, S.A.",
+    "address": "avenida d. joão ii, 36, 1998-017 lisboa",
+    "site": "https://www.vodafone.pt",
+    "cae": "61102",
+    "status": "Ativa"
+  },
+  "502604751": {
+    "casualName": "NOS",
+    "nif": "502604751",
+    "name": "NOS Comunicações, S.A.",
+    "address": "Rua Actor António Silva, 9, 1600-404 Lisboa",
+    "site": "nos.pt",
+    "cae": "61101",
+    "status": "Ativa"
+  },
+  "502790024": {
+    "casualName": "Brisa",
+    "nif": "502790024",
+    "name": "Brisa - Autoestradas de Portugal, S.A.",
+    "address": "Quinta Da Torre Da Aguilha, Edifício Brisa, 2785-599 São Domingos De Rana",
+    "site": "grupobrisa.pt",
+    "cae": "52211",
+    "status": "Ativa"
+  },
+  "502884665": {
+    "casualName": "CUF",
+    "nif": "502884665",
+    "name": "CUF, S.A.",
+    "address": "Avenida Do Forte, N.º 3, Edifício Suécia Iii, Piso 2, Carnaxide, 2790-071 Oeiras",
+    "site": "https://www.cuf.pt",
+    "cae": "77390",
+    "status": "Ativa"
+  },
+  "503025798": {
+    "casualName": "The Navigator Company",
+    "nif": "503025798",
+    "name": "The Navigator Company, S.A.",
+    "address": "Av. Fontes Pereira de Melo, n.º 27, 1050-117 Lisboa",
+    "site": "http://thenavigatorcompany.com",
+    "cae": "46862",
+    "status": "Ativa"
+  },
+  "503264032": {
+    "casualName": "REN",
+    "nif": "503264032",
+    "name": "REN - Redes Energéticas Nacionais, SGPS, S.A.",
+    "address": "Av. dos Estados Unidos da América, 55, 1749-061 Lisboa",
+    "site": "http://ren.pt",
+    "cae": "70100",
+    "status": "Ativa"
+  },
+  "503454109": {
+    "casualName": "Ageas Portugal",
+    "nif": "503454109",
+    "name": "Ageas Portugal - Companhia de Seguros, S.A.",
+    "address": "Pç. Príncipe Perfeito, 2, 1990-278 Lisboa",
+    "site": "http://www.ageas.pt",
+    "cae": "65120",
+    "status": "Ativa"
+  },
+  "504208187": {
+    "casualName": "Critical Software",
+    "nif": "504208187",
+    "name": "Critical Software, S.A.",
+    "address": "Parque Industrial de Taveiro, 3045-504 Coimbra",
+    "site": "https://www.criticalsoftware.com",
+    "cae": "62100",
+    "status": "Ativa"
+  },
+  "504615947": {
+    "casualName": "Altice Portugal",
+    "nif": "504615947",
+    "name": "MEO - Serviços de Comunicações e Multimédia, S.A.",
+    "address": "Avenida Fontes Pereira De Melo, Nº 40, 1069-300 Lisboa",
+    "site": "www.meo.pt",
+    "cae": "61101",
+    "status": "Ativa"
+  },
+  "504825330": {
+    "casualName": "Euronext Lisbon",
+    "nif": "504825330",
+    "name": "Euronext Lisbon - Sociedade Gestora de Mercados Regulamentados, S.A.",
+    "address": "Av. da Liberdade, 196, 7º, 1250-147 Lisboa",
+    "site": "euronext.com",
+    "cae": "66110",
+    "status": "Ativa"
+  },
+  "505060515": {
+    "casualName": "Galp",
+    "nif": "505060515",
+    "name": "Galp Energia, S.A.",
+    "address": "AVENIDA DA INDIA, 8, 1349-065 LISBOA",
+    "site": "galp.com/pt",
+    "cae": "70100",
+    "status": "Ativa"
+  },
+  "507398505": {
+    "casualName": "FARFETCH Portugal",
+    "nif": "507398505",
+    "name": "Farfetch Portugal",
+    "address": "Rua Da Lionesa, Nº 446, Edifício G12, 4465-671 Porto",
+    "site": "https://www.farfetch.com",
+    "cae": "63100",
+    "status": "Ativa"
+  },
+  "508771862": {
+    "casualName": "Feedzai",
+    "nif": "508771862",
+    "name": "Feedzai",
+    "address": "Coimbra, Portugal",
+    "site": "https://feedzai.com",
+    "cae": "62100",
+    "status": "Ativa"
+  },
+  "513180966": {
+    "casualName": "Efacec",
+    "nif": "513180966",
+    "name": "Efacec Power Solutions, S.A.",
+    "address": "Arroteia, Leça do Balio, 4465-587 Matosinhos",
+    "site": "https://www.efacec.pt",
+    "cae": "64212",
+    "status": "Ativa"
+  },
+  "514107405": {
+    "casualName": "Startup Portugal",
+    "nif": "514107405",
+    "name": "Startup Portugal - Associação Portuguesa para a Promoção do Empreendedorismo - SPAPPE",
+    "address": "Cais Português | Pavilhão de Portugal, 1990-221 Lisboa",
+    "site": "https://startupportugal.com/pt/",
+    "cae": "94995",
+    "status": "Ativa"
+  },
+  "517157721": {
+    "casualName": "Nimber",
+    "nif": "517157721",
+    "name": "NIMBERTECH - IT SOLUTIONS, LDA",
+    "address": "Rua do Polo Norte, Nº14, Piso 1.2, 1990-266 Lisboa",
+    "site": "nimber.pt",
+    "cae": "62201",
+    "status": "Ativa"
+  }
+}
