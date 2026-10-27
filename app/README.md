@@ -36,7 +36,6 @@ A interface fica em http://localhost:5173. Com a API a servir a compilação, fi
 | `/` | Totais, o interruptor da verificação semanal (com confirmação antes de ligar) e a tabela de empresas, com pesquisa. |
 | `/empresas/:nif` | Os dados guardados, «Verificar empresa» com os passos dos agentes em direto, o resultado, as propostas e a evidência. A evidência só inclui campos com propostas (pendentes ou já revistas) e só as fontes que encontraram alguma coisa; o cabeçalho de cada campo diz quantas foram pesquisadas. Se a verificação falhar, os passos que já apareceram ficam no ecrã. |
 | `/propostas` | Todas as propostas, filtradas por pendentes, aprovadas, rejeitadas ou todas, com aprovar e rejeitar. |
-| `/resultados` | A avaliação. Enquanto a API responde 501, mostra o lugar reservado. |
 
 O nome escrito no canto superior direito entra em cada aprovação e rejeição e fica guardado no browser.
 
@@ -47,5 +46,5 @@ O nome escrito no canto superior direito entra em cada aprovação e rejeição 
 | `src/api.ts` | O cliente da API, os erros e o fluxo NDJSON. Os tipos vêm dos esquemas da API, por isso a verificação de tipos também precisa dos pacotes instalados em `api/`. |
 | `src/data.tsx` | O estado partilhado: o contador que recarrega as listas e o nome de quem revê. |
 | `src/components/` | Os blocos de interface, o cabeçalho, os cartões de proposta, os diálogos, a evidência, a verificação e a ronda semanal. |
-| `src/pages/` | Os quatro ecrãs e a página não encontrada. |
+| `src/pages/` | Os ecrãs das empresas e das propostas, e a página não encontrada. |
 | `src/index.css` | O Tailwind, as cores e o modo escuro, que segue o sistema. |

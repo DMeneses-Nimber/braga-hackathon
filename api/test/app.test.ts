@@ -15,14 +15,6 @@ describe('the API around the endpoints', () => {
     ctx = undefined
   })
 
-  it('GET /api/avaliacao answers 501 for now', async () => {
-    ctx = await setup()
-    const response = await ctx.app.request('/api/avaliacao')
-    const payload = (await body(response)) as { error: { code: string } }
-    expect(response.status).toBe(501)
-    expect(payload.error.code).toBe('AVALIACAO_INDISPONIVEL')
-  })
-
   it('publishes an OpenAPI spec with every route', async () => {
     ctx = await setup()
     const response = await ctx.app.request('/api/openapi.json')
@@ -31,7 +23,6 @@ describe('the API around the endpoints', () => {
     expect(spec.servers).toEqual([{ url: '/api' }])
     expect(Object.keys(spec.paths).sort()).toEqual([
       '/agentes',
-      '/avaliacao',
       '/empresas',
       '/empresas/{nif}',
       '/empresas/{nif}/verificar',

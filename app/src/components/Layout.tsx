@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Building, ChartColumn, ClipboardCheck, ShieldCheck, User } from 'lucide-react'
+import { Building, ClipboardCheck, ShieldCheck, User } from 'lucide-react'
 import { Link, useLocation } from 'react-router'
 
 import { api } from '../api.js'
@@ -20,12 +20,6 @@ const NAV = [
     icon: ClipboardCheck,
     active: (path: string) => path.startsWith('/propostas'),
     count: true,
-  },
-  {
-    to: '/resultados',
-    label: 'Resultados',
-    icon: ChartColumn,
-    active: (path: string) => path.startsWith('/resultados'),
   },
 ] as const
 

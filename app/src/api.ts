@@ -163,5 +163,4 @@ export const api = {
     post<ApproveResult>(`/propostas/${id}/aprovar`, user ? { user } : {}),
   rejectProposal: (id: string, reason: string, user: string) =>
     post<RejectResult>(`/propostas/${id}/rejeitar`, user ? { reason, user } : { reason }),
-  getEvaluation: () => request<unknown>('/avaliacao'),
 }

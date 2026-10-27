@@ -10,7 +10,6 @@ import { Database } from './db/database.js'
 import { ApiError, errorBody } from './errors.js'
 import { agentRoutes } from './routes/agents.js'
 import { companyRoutes } from './routes/companies.js'
-import { evaluationRoutes } from './routes/evaluation.js'
 import { proposalRoutes } from './routes/proposals.js'
 import { createRouter } from './routes/router.js'
 import { weeklyRoutes } from './routes/weekly.js'
@@ -41,14 +40,13 @@ export interface ApiServices {
   agentsStatus: AgentsStatus
 }
 
-/** Mounts the five route groups. The type of the result is kept for a typed client. */
+/** Mounts the four route groups. The type of the result is kept for a typed client. */
 export function buildApi(services: ApiServices) {
   const api = createRouter()
   api.route('/', companyRoutes(services.db, services.verification))
   api.route('/', proposalRoutes(services.db, services.review))
   api.route('/', weeklyRoutes(services.weekly))
   api.route('/', agentRoutes(services.agentsStatus))
-  api.route('/', evaluationRoutes())
   return api
 }
 
@@ -94,7 +92,7 @@ export async function createApp(options: AppOptions): Promise<{
       title: 'Data Integrity Agent API',
       version: '0.1.0',
       description:
-        'Empresas e evidência em data/runtime/, propostas em data/summary/summary.json. Os agentes ligam-se com a chave do Grok em api/.env; GET /agentes diz se estão ligados. POST /empresas/{nif}/verificar/stream devolve a mesma verificação em NDJSON, passo a passo. PUT /verificacao-semanal liga a verificação de todas as empresas uma vez por semana. GET /avaliacao devolve 501.',
+        'Empresas e evidência em data/runtime/, propostas em data/summary/summary.json. Os agentes ligam-se com a chave do Grok em api/.env; GET /agentes diz se estão ligados. POST /empresas/{nif}/verificar/stream devolve a mesma verificação em NDJSON, passo a passo. PUT /verificacao-semanal liga a verificação de todas as empresas uma vez por semana.',
     },
     servers: [{ url: '/api' }],
     tags: [
@@ -102,7 +100,6 @@ export async function createApp(options: AppOptions): Promise<{
       { name: 'Propostas' },
       { name: 'Verificação semanal' },
       { name: 'Agentes' },
-      { name: 'Avaliação' },
     ],
   })
   api.get('/docs', swaggerUI({ url: '/api/openapi.json' }))

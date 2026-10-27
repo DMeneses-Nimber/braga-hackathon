@@ -1,6 +1,6 @@
 # API do Data Integrity Agent
 
-A API é Hono com validação Zod sobre ficheiros JSON. Dois agentes Grok (recolha e comparação) verificam a morada, a CAE, o website e o estado de cada empresa. Sem a chave do Grok, a verificação responde 501. `GET /avaliacao` responde 501 até existirem os agentes e as referências.
+A API é Hono com validação Zod sobre ficheiros JSON. Dois agentes Grok (recolha e comparação) verificam a morada, a CAE, o website e o estado de cada empresa. Sem a chave do Grok, a verificação responde 501.
 
 Tudo o que a API escreve fica em `data/runtime/` e em `data/summary/summary.json`. O ficheiro de referência `data/companies/companies.json` nunca é alterado.
 
